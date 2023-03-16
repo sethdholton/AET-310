@@ -1,0 +1,5 @@
+// game variables
+class Pong
+{
+ 
+}
