@@ -1,5 +1,0 @@
-// game variables
-class Pong
-{
- 
-}
