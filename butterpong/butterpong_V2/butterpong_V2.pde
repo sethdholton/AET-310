@@ -2,7 +2,7 @@
 /**
   * ~*~ ButterPong ~*~
   * 
-  * game by Seth Holton
+  * Game by Seth Holton
   *
   * ~~~ Controls ~~~
   * left click - serve the ball
@@ -19,19 +19,26 @@
   *
 **/
 
-Ball testball = new Ball();
+PongGame ng = new PongGame();
 
 void setup() {
   size (800, 800);
   frameRate(100);
   noStroke();
-  testball.initialize(width, height);
+  ng.simulate(width, height);
 }
+
+
+
 
 void draw() {
   background(230, 193, 238);
-  testball.drawBall();
+  ng.drawPong();
 }
 
+
+
+
 void mousePressed() {
+  ng.serve();
 }
