@@ -22,11 +22,12 @@
 PongGame ng = new PongGame();
 
 void setup() {
-  size (800, 800);
+  size(800, 800);
   frameRate(100);
   noStroke();
-  ng.simulate(width, height);
+  ng.init(width, height);
 }
+
 
 
 
@@ -35,6 +36,7 @@ void draw() {
   background(230, 193, 238);
   ng.drawPong();
 }
+
 
 
 
